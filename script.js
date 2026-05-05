@@ -1,20 +1,30 @@
-// ===== DARK / LIGHT MODE TOGGLE =====
-function toggleDark() {
-  document.body.classList.toggle('light');
-  const btn = document.querySelector('.toggle-btn');
-  btn.textContent = document.body.classList.contains('light') ? '🌙 Dark' : '☀ Light';
+/* SMOOTH SCROLL */
+document.querySelectorAll('nav a').forEach(link=>{
+link.addEventListener('click',function(e){
+e.preventDefault();
+document.querySelector(this.getAttribute('href'))
+.scrollIntoView({behavior:'smooth'});
+});
+});
+
+/* NAVBAR SCROLL EFFECT */
+window.addEventListener('scroll',()=>{
+const nav = document.querySelector('nav');
+if(window.scrollY > 50){
+nav.classList.add('scrolled');
+} else{
+nav.classList.remove('scrolled');
 }
+});
 
-// ===== SCROLL REVEAL ANIMATION =====
-const reveals = document.querySelectorAll('.reveal');
+/* SCROLL ANIMATION */
+const cards = document.querySelectorAll('.card');
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
-    if (entry.isIntersecting) {
-      setTimeout(() => entry.target.classList.add('visible'), i * 80);
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1 });
-
-reveals.forEach(el => observer.observe(el));
+window.addEventListener('scroll',()=>{
+cards.forEach(card=>{
+const rect = card.getBoundingClientRect();
+if(rect.top < window.innerHeight - 100){
+card.classList.add('show');
+}
+});
+});
