@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moksh Patel | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav>
+  <div class="nav-logo">MP</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button class="toggle-btn" onclick="toggleDark()">☀ Light</button>
+</nav>
+
+<!-- ===== HOME ===== -->
+<section id="home">
+  <div class="hero-orb orb1"></div>
+  <div class="hero-orb orb2"></div>
+  <div class="hero-inner">
+
+    <!-- YOUR PHOTO: Replace emoji div with your actual photo -->
+    <!-- Option 1: Emoji placeholder (current) -->
+    <div class="hero-photo-placeholder">👩</div>
+    <!-- Option 2: Your real photo — delete div above and uncomment below -->
+    <!-- <img src="your-photo.jpg" class="hero-photo" alt="Harmandeepkaur Bombra"> -->
+
+    <h1 class="hero-name">
+      Moksh
+      <span>Patel</span>
+    </h1>
+    <p class="hero-tagline">BBA Student · Aspiring Business Leader · Lifelong Learner</p>
+    <p class="hero-intro">
+      Passionate BBA student with interests in AI, management, and building
+      meaningful connections between business and technology.
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">View My Projects</a>
+      <a href="#contact" class="btn btn-outline">Get In Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <p class="section-label reveal">Who I Am</p>
+    <h2 class="section-title reveal">About Me</h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          Hi! I'm <strong>Moksh Patel</strong>, a BBA student passionate about
+          business, technology, and continuous personal growth.
+        </p>
+        <p>
+          I am currently pursuing my Bachelor of Business Administration,
+          developing strong foundations in management, marketing,
+          finance, and organizational behavior.
+        </p>
+        <p>
+          My goal is to bridge the gap between business strategy and modern technology,
+          creating solutions that make a real difference.
+        </p>
+      </div>
+      <div class="info-card reveal">
+        <h3>Interests & Strengths</h3>
+        <ul class="strengths-list">
+          <li>Business Strategy & Management</li>
+          <li>Artificial Intelligence & Technology</li>
+          <li>Marketing & Consumer Behavior</li>
+          <li>Organizational Behavior & Leadership</li>
+          <li>Finance & Economics</li>
+          <li>Communication & Teamwork</li>
+          <li>Problem Solving & Critical Thinking</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ACHIEVEMENTS ===== -->
+<section id="achievements">
+  <div class="container">
+    <p class="section-label reveal">Recognition</p>
+    <h2 class="section-title reveal">Achievements & Certificates</h2>
+
+    <div class="cert-grid">
+
+      <div class="cert-card reveal">
+        <div class="cert-img">
+          <img src="INTRO.png" alt="Cisco AI Certificate" onerror="this.parentElement.innerHTML='🏅'"/>
+        </div>
+        <div class="cert-body">
+          <p class="cert-org">Cisco Networking Academy</p>
+          <h3 class="cert-title">Introduction to Modern AI</h3>
+          <p class="cert-date">📅 Completed: 14 Feb 2026</p>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-img">
+          <img src="YUVA_AI.jpeg" alt="Yuva AI Certificate" onerror="this.parentElement.innerHTML='🏅'"/>
+        </div>
+        <div class="cert-body">
+          <p class="cert-org">INDIA Ai · Nasscom FutureSkills Prime</p>
+          <h3 class="cert-title">Yuva AI for All</h3>
+          <p class="cert-date">📅 Issued: 10 Feb 2026</p>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-img">
+          <img src="OB.png" alt="IESE Certificate" onerror="this.parentElement.innerHTML='🏅'"/>
+        </div>
+        <div class="cert-body">
+          <p class="cert-org">IESE Business School · Coursera</p>
+          <h3 class="cert-title">Organizational Behavior: How to Manage People</h3>
+          <p class="cert-date">📅 Completed: Feb 2025</p>
+        </div>
+      </div>
+
+    </div>
+
+    <br/><br/>
+    <div class="achieve-grid">
+      <div class="achieve-card reveal">
+        <div class="achieve-icon">🤖</div>
+        <h3>AI Enthusiast</h3>
+        <p>Completed multiple AI-focused certifications exploring modern tools, applications, and real-world use cases.</p>
+      </div>
+      <div class="achieve-card reveal">
+        <div class="achieve-icon">📊</div>
+        <h3>Business Management</h3>
+        <p>Certified in Organizational Behavior by IESE Business School — understanding leadership and team dynamics.</p>
+      </div>
+      <div class="achieve-card reveal">
+        <div class="achieve-icon">🌐</div>
+        <h3>Tech & Networking</h3>
+        <p>Trained through Cisco Networking Academy, building technical knowledge alongside business skills.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <div class="container">
+    <p class="section-label reveal">What I've Done</p>
+    <h2 class="section-title reveal">Projects</h2>
+    <div class="projects-grid">
+
+      <div class="project-card reveal">
+        <span class="project-tag">AI4A Project</span>
+        <h3>Yuva AI for All</h3>
+        <p>
+          Participated in the Yuva AI for All program — exploring how artificial intelligence
+          can be made accessible to communities across India.
+        </p>
+      </div>
+
+      <div class="project-card reveal">
+        <span class="project-tag">Web Development</span>
+        <h3>Student Digital Portfolio</h3>
+        <p>
+          Designed and built this fully responsive personal portfolio website using
+          HTML, CSS, and JavaScript. Deployed on GitHub Pages with dark/light mode toggle.
+        </p>
+      </div>
+
+      <div class="project-card reveal">
+        <span class="project-tag">Design Thinking</span>
+        <h3>Design Thinking Project</h3>
+        <p>
+          Explored design thinking methodologies including empathy mapping, ideation,
+          prototyping, and testing to solve real-world business problems.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery">
+  <div class="container">
+    <p class="section-label reveal">Visuals</p>
+    <h2 class="section-title reveal">Gallery</h2>
+    <div class="gallery-grid">
+
+      <div class="gallery-item reveal">
+        <img src="INTRO.png" alt="Cisco AI Certificate" onerror="this.innerHTML='🏅'"/>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="YUVA_AI.jpeg" alt="Yuva AI Certificate" onerror="this.innerHTML='🏅'"/>
+      </div>
+      <div class="gallery-item reveal">
+        <img src="Screenshot_2026-05-01_112155.png" alt="IESE Certificate" onerror="this.innerHTML='🏅'"/>
+      </div>
+      <!-- ADD YOUR PHOTOS: copy line below, change src to your photo filename -->
+      <!-- <div class="gallery-item reveal"><img src="your-photo.jpg" alt="My Photo"/></div> -->
+      <div class="gallery-item reveal" style="font-size:1rem;padding:1rem;text-align:center;">
+        📷 Add your photos here
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXTRA ANIMATED SKILLS SECTION ===== -->
+<section id="extra">
+  <div class="container">
+    <p class="section-label reveal">✨ Extra Feature</p>
+    <h2 class="section-title reveal" style="color:#fff;">Skills Cloud</h2>
+    <p style="color:var(--muted);max-width:500px;margin:0 auto;text-align:center;" class="reveal">
+      A snapshot of domains I'm building expertise in.
+    </p>
+    <div class="floating-words reveal">
+      <span class="floating-word">Business Strategy</span>
+      <span class="floating-word">Marketing</span>
+      <span class="floating-word">Finance</span>
+      <span class="floating-word">Artificial Intelligence</span>
+      <span class="floating-word">Leadership</span>
+      <span class="floating-word">Organizational Behavior</span>
+      <span class="floating-word">Communication</span>
+      <span class="floating-word">HTML & CSS</span>
+      <span class="floating-word">JavaScript</span>
+      <span class="floating-word">GitHub</span>
+      <span class="floating-word">Problem Solving</span>
+      <span class="floating-word">Teamwork</span>
+      <span class="floating-word">Economics</span>
+      <span class="floating-word">Networking</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <p class="section-label reveal">Let's Connect</p>
+    <h2 class="section-title reveal">Contact Me</h2>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p style="color:var(--muted);line-height:1.8;margin-bottom:1.5rem;">
+          I'm always open to opportunities, collaborations, and conversations.
+          Whether you're a future employer, fellow student, or just want to say hi — reach out!
+        </p>
+        <p style="color:var(--muted);font-size:0.9rem;">
+          📍 Based in India &nbsp;|&nbsp; 🎓 BBA Student
+        </p>
+      </div>
+      <div class="contact-links reveal">
+
+        <a href="mailto:mokshpatel6717@gmail.com" class="contact-link">
+          <div class="contact-link-icon">📧</div>
+          <div class="contact-link-info">
+            <strong>Email</strong>
+            <span>mokshpatel6717@gmail.com</span>
+          </div>
+        </a>
+
+        <a href="tel:+918468802530" class="contact-link">
+          <div class="contact-link-icon">📱</div>
+          <div class="contact-link-info">
+            <strong>Phone</strong>
+            <span>+91 8468802530</span>
+          </div>
+        </a>
+
+        <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" class="contact-link">
+          <div class="contact-link-icon">💼</div>
+          <div class="contact-link-info">
+            <strong>LinkedIn</strong>
+            <span>linkedin.com/in/YOUR_LINKEDIN</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/moksh0009" target="_blank" class="contact-link">
+          <div class="contact-link-icon">🐙</div>
+          <div class="contact-link-info">
+            <strong>GitHub</strong>
+            <span>github.com/moksh0009</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <span>Moksh Patel</span> · BBA Student Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
